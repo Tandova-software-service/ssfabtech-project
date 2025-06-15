@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>contact us || ssfabtech</title>
+   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="asset\meta-logo.png" />
+   <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+ 
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Contact SSfabtech - Leading manufacturer of premium UPVC windows, doors, ventilators, and custom solutions in Chennai. Reach us for factory location, support, or quotes.">
+  <meta name="keywords" content="UPVC Windows Chennai, UPVC Doors Manufacturer, SSfabtech, Contact SSfabtech, UPVC Factory, Chennai UPVC Company, UPVC Warehouse, UPVC Ventilators, UPVC with Grill">
+  <meta name="author" content="SSfabtech">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:title" content="Contact SSfabtech | UPVC Windows & Doors Manufacturer in Chennai" />
+  <meta property="og:description" content="Get in touch with SSfabtech for UPVC products, repair, and services. Find our factory and warehouse addresses, contact numbers, and email." />
+  <meta property="og:image" content="https://yourdomain.com/asset/meta-logo.png" />
+  <meta property="og:url" content="https://yourdomain.com/contact.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="asset/meta-logo.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+}
+.address-section {
+  padding: 20px 20px 50px;  /* was 50px top, now 20px */
+  background: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.address-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.address-box {
+  padding: 20px;
+}
+
+.address-box .icon {
+  background-color: #ffb400;
+  color: white;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.address-box h4 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 18px;
+}
+
+.address-box p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ===== Header/Navbar ===== */
+/* Navbar container */
+.navbar-container {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Shadow on scroll */
+.navbar-container.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main navbar layout */
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Logo */
+.logo {
+  height: 40px;
+}
+
+/* Desktop nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #000000;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 16px;
+  padding: 6px 10px;
+}
+
+.nav-links a:hover {
+  color: #00a0fd;
+}
+
+.navbar-container.scrolled .nav-links a {
+  color: #1b3d5d;
+}
+
+.navbar-container.scrolled .nav-links a:hover {
+  color: #004aad;
+}
+
+/* Hamburger icon */
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #004aad;
+}
+
+/* ===== Mobile Styles ===== */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* below navbar */
+    right: 20px;
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+    min-width: 180px;
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    color: #004aad;
+    font-size: 16px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  /* Hide desktop menu layout */
+  .navbar {
+    flex-direction: row;
+  }
+}
+
+
+
+
+
+/* footer-section */
+.footer {
+  background-color: #151543;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.footer-column p, .footer-column li {
+  font-size: 15px;
+  margin: 10px 0;
+  color: #eee;
+  line-height: 1.5;
+}
+
+.footer-column i {
+  color: #fdd835;
+  margin-right: 10px;
+}
+
+.quick-links .links {
+  display: flex;
+  gap: 30px;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links li {
+  color: #ffc107;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+
+
+
+
+/* WhatsApp Button Styles */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #1e3a8a; /* Tailwind-inspired blue (same as "Our Services") */
+  font-weight: 800;
+  text-align: center;
+}
+.section-subtitle {
+  font-size: 20px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 15px;  /* reduced from 40px */
+  position: relative;
+}
+
+
+.section-subtitle::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #facc15; /* Yellow underline */
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+  </style>
+</head>
+<body>
+
+      <!-- Header/Navbar -->
+  <header class="navbar-container" id="navbar">
+    <nav class="navbar">
+      <img src="asset/logo.png" alt="SS Fabtech" class="logo" />
+    <ul class="nav-links" id="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="product.html">Products</a></li>
+
+
+  <li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+      <div id="menu-toggle" class="menu-icon">☰</div>
+    </nav>
+  </header>
+<br>
+
+  <!-- about Section -->
+   <center>
+   <section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-text">
+      <h2 class="about-title">Contact SSfabtech</h2>
+      <p class="about-subtitle">Your connection to quality service starts here</p>
+      </center>
+<section class="address-section">
+  <div class="address-grid">
+
+    <div class="address-box">
+      <div class="icon"><i class="fas fa-building"></i></div>
+      <h4>Factory Address</h4>
+      <p>T-282, sidco women's indl park,<br> kattur village, Thirumullaivoyal,<br> Chennai, Tamil Nadu 600062.</p>
+    </div>
+
+    <div class="address-box">
+      <div class="icon"><i class="fas fa-headphones"></i></div>
+      <h4>Mobile</h4>
+      <p>+91- 9381077991</p>
+      <p>+91- 9381077993</p>
+    </div>
+
+    <div class="address-box">
+      <div class="icon"><i class="fas fa-envelope"></i></div>
+      <h4>Email Id</h4>
+      <p>ssfabtech@yahoo.com</p>
+    </div>
+
+    <div class="address-box">
+      <div class="icon"><i class="fas fa-industry"></i></div>
+      <h4>Warehouse Address</h4>
+      <p>No. 29, Sidco Indus.Estate,<br>
+         Vennanayithur, Tindivanam,<br>
+         Villupuram Dist, Tamilnadu – 604207.</p>
+    </div>
+
+
+
+  </div>
+
+</section>
+</div>
+</div>
+</section>
+      <!-- WhatsApp Button -->
+  <a href="https://wa.me/9381077991" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <img src="asset/whatsapp logo.png" alt="WhatsApp" />
+  </a>
+
+
+
+  <!-- Footer Section -->
+<footer class="footer" id="contact">
+  <div class="footer-container">
+
+    <!-- CONTACT US -->
+    <div class="footer-column">
+      <h3>CONTACT US</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Address T-282, sidco women's indl park, kattur village, Thirumullaivoyal, Chennai, Tamil Nadu 600062.</p>
+      <p><i class="fas fa-phone"></i> +91 9381077991</p>
+      <p><i class="fas fa-mobile-alt"></i> +91 9381077993</p>
+      <p><i class="fas fa-envelope"></i>ssfabtech@yahoo.com</p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-column quick-links">
+      <h3>QUICK LINKS</h3>
+      <div class="links">
+        <ul>
+          <li><a href="product.html">UPVC WINDOWS</a></li>
+          <li><a href="product.html">UPVC DOORS</a></li>
+          <li><a href="ssfabtech-certificate.pdf">TEST CERTIFICATES</a></li>
+        </ul>
+        <ul>
+          <li><a href="product.html">UPVC WINDOWS WITH GRILL</a></li>
+          <li><a href="product.html">UPVC VENTILATORS</a></li>
+          <li><a href="index.html">REPAIR AND SERVICES</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  </div>
+<br>
+<center>
+<!-- Moved this OUTSIDE the footer for better layout control -->
+<div class="footer-bottom">
+  <p>© 2025 SSfabtech. Developed by Kaviya Sivakumar.</p>
+</div>
+</center>
+</footer>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+
+</body>
+</html>
